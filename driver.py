@@ -17,7 +17,7 @@ def get_multiple_charts_timeperiod(ticker_list,path,timeperiod):
     asyncio.run(get_multiple_charts_timeperiod_driver(ticker_list,path,timeperiod))
 
 
-ticker =['HDFCBANK','YESBANK']
+ticker ='HDFCBANK'
 path = r'D:\Work\pypi\v2\images'
 tp = '5D'
 

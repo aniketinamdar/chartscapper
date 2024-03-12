@@ -129,10 +129,10 @@ async def get_chart_timeperiod_driver(stock_ticker,save_location,time_period):
             print("Time period entered is incorrect")
 
 
-        # time_period_button = f'body > div.js-rootresizer__contents.layout-with-border-radius > div.layout__area--center > div.chart-toolbar.chart-controls-bar > div > div:nth-child(2) > div > div > button:nth-child({value})'
-        time_period_button = f'/html/body/div[2]/div[5]/div[1]/div/div[2]/div/div/button[{value}]'
-        # await page.waitForSelector(time_period_button,timeout = 10000)
-        await page.waitForXPath(time_period_button,timeout = 10000)
+        time_period_button = f'body > div.js-rootresizer__contents.layout-with-border-radius > div.layout__area--center > div.chart-toolbar.chart-controls-bar > div > div:nth-child(2) > div > div > button:nth-child({value})'
+        # time_period_button = f'/html/body/div[2]/div[5]/div[1]/div/div[2]/div/div/button[{value}]'
+        await page.waitForSelector(time_period_button,timeout = 10000)
+        # await page.waitForXPath(time_period_button,timeout = 10000)
         await page.click(time_period_button)
         print('Time interval sent')
 
