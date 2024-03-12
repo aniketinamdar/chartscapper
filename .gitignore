@@ -1,0 +1,5 @@
+/.idea
+test/*
+backup.py
+/images
+/__pycache__
